@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaranadh</title>
+    
+<!--font awsome-->
+<script src="https://kit.fontawesome.com/a46b5c1927.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    
+   
+</head>
+<body>
+    <header>
+        <nav id="nav-container">
+            <div id="nav-main" >
+                <div id="close-icon"></div>
+                <a href="#">Home</a>
+                <a href="#">Order</a>
+                <a href="#">Food</a>
+                <a href="#">Restaurant</a>
+                <a href="#">Testmonials</a>
+                <a href="#">Contact Us</a>
+                <i class="fa-solid fa-phone icons-1"></i>
+                <i class="fa-solid fa-cart-shopping icons-1"></i>
+            </div>
+        </nav>
+        <i id="menu-icon" class="fas fa-bars"></i>
+    
+    </header>
+    <section id="section-1">
+        
+        <img src="img1.jpg" class="img1">
+        <div id="icons-2"></div>
+        <div id="icons-3"></div>
+        <div class="headline">
+           <h1>LOREM IPSUM</h1>
+           <p>Lorem Ipsum has been the industry's standard dummy
+            text ever since the 1500s, when an unknown printer took
+            a galley of type and scrambled it to make a type
+            specimen book.</p>
+        </div>
+    </section>
+    <section id="section-2">
+     <div class="section-2">
+       <h1>Order Now</h1>
+       <div id="square-container">
+        <div class="square">
+            <img src="img4.jpg" class="food-img">
+            <h3>BURGER</h3>
+            <P>Lorem Ipsum has been the
+                industry's standard dummy text</P>
+        </div>
+        <div class="square">
+            <img src="img2.jpg" class="food-img">
+            <h3 class="pizza">PIZZA</h3>
+            <P>Lorem Ipsum has been the
+                industry's standard dummy text</P>
+        </div>
+        <div class="square">
+            <img src="img3.jpg" class="food-img">
+            <h3  class="pastha">PASTA</h3>
+            <P>Lorem Ipsum has been the
+                industry's standard dummy text</P>
+        </div>
+       </div>
+       <div class="button-containor">
+         <button>Order</button>
+       </div>
+     </div>
+    </section>
+</body>
+<script>
+    const menuIcon = document.getElementById("menu-icon");
+const closeIcon = document.getElementById("close-icon");
+const phoneIconElement=document.getElementById("icons-2")
+const cartIconElement=document.getElementById("icons-3")
+const navContainer = document.getElementById("nav-container");
+
+menuIcon.addEventListener("click", function() {
+    navContainer.classList.toggle("show-nav");
+    menuIcon.style.display = "none";
+    closeIcon.innerHTML = '<i class="fas fa-times" id="close"></i>';
+    phoneIconElement.innerHTML='<i class="fa-solid fa-phone"id="phone"></i>';
+    cartIconElement.innerHTML='<i class="fa-solid fa-cart-shopping"id="cart"></i>';
+    
+    navContainer.style.display = "block";
+});
+
+closeIcon.addEventListener("click", function() {
+    navContainer.classList.remove("show-nav");
+    navContainer.style.display = "none";
+    closeIcon.innerHTML = "";
+    phoneIconElement.style.display="block";
+    cartIconElement.style.display="block";
+    menuIcon.style.display = "block";
+});
+</script>
+
+</html>

@@ -1,0 +1,455 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0; 
+    z-index: 2;
+}
+#nav-container{
+    font-family: "Lora", serif;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+    background-color: white;
+
+}
+#nav-container a{
+    text-decoration: none;
+color:black;
+font-size: large;
+padding: 35px;
+}
+.fa-phone{
+    margin-left: 50px;
+}
+#menu-icon{
+position:relative;
+float: left;
+margin-right: 40px;
+top:-530px;
+display: none;
+}
+
+#section-1 .img1{
+width:100%;
+height: 550px;
+}
+.headline{
+    width:630px;
+    height:200px;
+    position: absolute;
+    top:220px;
+    margin-left: 100px;
+    background: rgba(248, 61, 61, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.headline h1,p{
+    font-family: "Mukta", sans-serif;
+    color: white;
+}
+.headline h1{
+  font-size: 40px;
+  margin-left: 40px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.headline p{
+    margin-left: 40px;
+    width:480px;
+}
+.section-2{
+width: 100%;
+height: 650px;
+position:relative;
+top:-5px;
+background: rgb(250,104,208);
+background: -moz-linear-gradient(90deg, rgba(250,104,208,0.9360994397759104) 5%, rgba(249,210,93,0.9248949579831933) 72%);
+background: -webkit-linear-gradient(90deg, rgba(250,104,208,0.9360994397759104) 5%, rgba(249,210,93,0.9248949579831933) 72%);
+background: linear-gradient(90deg, rgba(250,104,208,0.9360994397759104) 5%, rgba(249,210,93,0.9248949579831933) 72%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fa68d0",endColorstr="#f9d25d",GradientType=1);
+}
+.section-2 h1{
+    font-family: "Mukta", sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+#square-container{
+    margin-top:50px;
+ margin-left: 150px;
+}
+.square{
+    display: inline-flex;
+    width: 250px;
+    height: 350px;
+    background:white;
+    border-radius:0px 60px;
+    margin-left: 100px;
+    box-sizing: border-box;
+  }
+.food-img{
+  width:250px;
+  height:250px;
+  padding:20px;
+  border-radius: 0px 70px 0px 0px;
+}
+.square h3{
+    font-family: "Mukta", sans-serif;
+position: absolute;
+margin-top: 250px;
+margin-left: 80px;
+}
+.square p{
+    font-family: "Mukta", sans-serif;
+    position: absolute;
+    width:200px;
+    color:black;
+    margin-left: 35px;
+    margin-top: 280px;
+    font-size: small;
+}
+.pizza,.pastha{
+margin-left: 100px;
+}
+.button-containor{
+    text-align: center;
+    margin-top: 70px;
+}
+button{
+    width:150px;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 50px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(192, 192, 192,0.8);
+}
+/* index.css */
+@media (max-width: 1280px){
+    header{
+       display: block;
+    }
+    #section-1 .img1{
+    width:100%;
+    height: 650px;
+    }
+    .headline{
+        width:580px;
+        margin-left: 60px;
+        top:280px;
+    }
+    
+    #square-container{
+        margin-top:50px;
+     margin-left: 50px;
+    }
+}
+/* Add media query for mobile view */
+@media (max-width: 1024px){
+    #square-container{
+      display:inline-flex;
+     margin-left: 35px;
+   
+    }   
+    .square{
+        margin-left: 50px;
+    }
+}
+@media (max-width:912px) {
+    .icons-1 {
+        display: none;
+    }
+
+    #nav-container {
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+    }
+
+    #nav-main {
+        margin-top: 20px;
+    }
+
+    #nav-container a {
+        display: block;
+        padding: 2px;
+        font-size: 30px;
+    }
+
+    #menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        font-size: 54px;
+        cursor: pointer;
+    }
+
+    #close-icon {
+        position: relative;
+        float: left;
+        top: -30px;
+        font-size: 54px;
+    }
+
+    #icons-2,
+    #icons-3 {
+        position: relative;
+        float: left;
+        top: -590px;
+        padding: 10px;
+        font-size: 40px;
+    }
+
+    #icons-2 {
+        position: relative;
+        margin-left: 630px;
+    }
+
+    #section-1 .img1 {
+        height: 600px;
+    }
+
+    .headline {
+        position: relative;
+        top: -420px;
+        width: 90%;
+        max-width: none;
+        height: 200px;
+        margin-left: 40px;
+    }
+
+    .headline h1 {
+        position: relative;
+        font-size: 45px;
+        margin-left: 250px;
+    }
+
+    .headline p {
+        width: 80%;
+        font-size: 24px;
+        margin-left: 100px;
+    }
+
+    .section-2 {
+        position: absolute;
+        width: 100%;
+        height: 770px;
+        top: 600px;
+    }
+
+    #square-container {
+        position: relative;
+        left: 0;
+        top:60px;
+        margin-left: 20px;
+    }
+
+    .section-2 h1 {
+        font-size: 44px;
+        padding-top: 20px;
+    }
+
+    .square {
+        margin-bottom: 100px;
+        margin-left: 30px;
+    }
+
+    button {
+        font-size: 24px;
+        width:200px;
+        padding:30px 0px;
+    }
+}
+@media (max-width:820px) {
+    #icons-2 {
+        position: relative;
+        margin-left: 580px;
+    }
+    #square-container {
+        position: relative;
+        left: 0;
+        top:60px;
+        margin-left:5px;
+    }
+
+    .square {
+        margin-bottom: 100px;
+        margin-left: 12px;
+    }
+}
+@media (max-width:768px) {
+    #icons-2 {
+        position: relative;
+        margin-left: 580px;
+    }
+    .section-2{
+        height:2100px;
+    }
+    #square-container {
+        position: relative;
+        left: 0;
+        top:60px;
+        display: block;
+        margin-left:170px;
+    }
+.square{
+    width: 400px;
+    height: 500px;
+}
+.food-img{
+    width:380px;
+    height:350px;
+    padding-left: 40px;
+    padding-top: 40px;
+    border-radius: 0px 70px 0px 0px;
+  }
+  .square h3{
+margin-top: 350px;
+margin-left: 120px;
+font-size: 30px;
+}
+.square p{
+  
+    width:300px;
+    margin-left:57px;
+    margin-top: 400px;
+    font-size: 20px;
+}
+
+}
+
+/*new*/
+@media (max-width:450px){
+    #icons-2,
+    #icons-3 {
+        position: relative;
+        top: -500px;
+        font-size: 25px;
+    }
+
+    #icons-2 {
+        position: relative;
+        margin-left: 250px;
+    }
+    #menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    #close-icon {
+        position: relative;
+        float: left;
+        top: -30px;
+        font-size: 24px;
+    }
+
+
+    #section-1 .img1 {
+        height: 500px;
+    }
+
+    .headline {
+       position: relative;
+       top:-360px;
+       margin-left: 20px;
+    }
+
+    .headline h1 {
+        font-size: 30px;
+        margin-left:70px;
+    }
+
+    .headline p {
+        width: 100%;
+        font-size: 16px;
+        margin-left:20px;
+    }
+    .section-2{
+        position: absolute;
+        top:501px;
+        height:1800px;
+    }
+    #square-container {
+        position: relative;
+        left: 0;
+        top:60px;
+        display: block;
+        margin-left:42px;
+    }
+.square{
+    width: 300px;
+    height: 400px;
+}
+.food-img{
+    width:280px;
+    height:250px;
+    padding-left: 30px;
+    padding-top: 30px;
+    border-radius: 0px 70px 0px 0px;
+  }
+  .square h3{
+margin-top: 250px;
+margin-left: 80px;
+font-size: 25px;
+}
+.square p{
+  
+    width:200px;
+    margin-left:50px;
+    margin-top: 300px;
+    font-size: 20px;
+}
+
+button {
+    font-size: 18px;
+    width: 150px;
+    padding: 20px 0;
+}
+}
+@media (max-width:400px){
+    #icons-2,
+    #icons-3 {
+        position: relative;
+        top: -500px;
+        font-size: 25px;
+    }
+
+    #icons-2 {
+        position: relative;
+        margin-left: 200px;
+    }
+    #square-container {
+        position: relative;
+        left: 0;
+        top:60px;
+        display: block;
+        margin-left:33px;
+    }
+}
+@media (max-width:380px){
+  
+    #square-container {
+        position: relative;
+        left: 0;
+        top:60px;
+        display: block;
+        margin-left:27px;
+     
+    }
+}
