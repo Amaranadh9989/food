@@ -146,7 +146,9 @@ button{
         margin-left: 60px;
         top:280px;
     }
-    
+    .section-2{
+        height:1000px;
+    }
     #square-container{
         margin-top:50px;
      margin-left: 50px;
