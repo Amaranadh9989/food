@@ -134,6 +134,7 @@ button{
 }
 /* index.css */
 @media (max-width: 1280px){
+  
     header{
        display: block;
     }
@@ -146,7 +147,17 @@ button{
         margin-left: 60px;
         top:280px;
     }
-    
+    .section-2{
+        width: 100%;
+        height: 650px;
+        position:relative;
+        top:-5px;
+        background: rgb(250,104,208);
+        background: -moz-linear-gradient(90deg, rgba(250,104,208,0.9360994397759104) 5%, rgba(249,210,93,0.9248949579831933) 72%);
+        background: -webkit-linear-gradient(90deg, rgba(250,104,208,0.9360994397759104) 5%, rgba(249,210,93,0.9248949579831933) 72%);
+        background: linear-gradient(90deg, rgba(250,104,208,0.9360994397759104) 5%, rgba(249,210,93,0.9248949579831933) 72%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fa68d0",endColorstr="#f9d25d",GradientType=1);
+        }
     #square-container{
         margin-top:50px;
      margin-left: 50px;
@@ -158,7 +169,7 @@ button{
     #square-container{
       display:inline-flex;
      margin-left: 35px;
-     display: none;
+   
     }   
     .square{
         margin-left: 50px;
@@ -248,7 +259,7 @@ button{
         width: 100%;
         height: 770px;
         top: 600px;
-        display: none;
+        
     }
 
     #square-container {
