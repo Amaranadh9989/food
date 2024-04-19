@@ -158,7 +158,7 @@ button{
     #square-container{
       display:inline-flex;
      margin-left: 35px;
-   
+     display: none;
     }   
     .square{
         margin-left: 50px;
